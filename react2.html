@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello world from ReactJS!</title>
+    <style>
+        .ami-element{
+            color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+<script type='text/babel'>
+//   const MyElement = React.createElement('div', {className: 'ami-element'}, React.createElement('h1', {}, 'Hello, my name is Ami.'));
+//   ReactDOM.render(MyElement, document.getElementById('root'));
+
+    const MyElement = <div className="ami-element"><h1>Hello my name is Ami</h1></div>;
+    ReactDOM.render(MyElement, document.getElementById('root'));
+</script>
+
+</html>
